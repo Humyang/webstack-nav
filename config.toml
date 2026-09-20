@@ -1,4 +1,4 @@
-baseURL               = "https://webstack-nav.pages.dev/"
+baseURL               = "https://humyang.github.io/webstack-nav/"
 languageCode          = "zh-CN"
 title                 = "资源导航"
 theme                 = "WebStack-Hugo"
@@ -13,7 +13,7 @@ publishDir            = "public"				# 站点静态文件保存目录
     description   = "精选优质资源导航站点 | 基于 WebStack-Hugo 主题"
     upload        = ""      # 左侧导航栏的"网站提交"
     about         = ""	          # 左侧导航栏的"关于导航"页面(./about)
-    repository    = ""  
+    repository    = "https://github.com/Humyang/webstack-nav"  
     enablePreLoad = true					# 网站完全打开前预加载动画
     textPreLoad   = "资源导航"				# 预加载的动画文字, 只有当enablePreLoad=true时生效
     expandSidebar = false					# 默认展开左侧边导航栏
