@@ -1,4 +1,4 @@
-# 在此添加导航分类，格式：
+# 导航条目格式说明：
 # - taxonomy: 分类名
 #   icon: fas fa-folder fa-lg
 #   list:
@@ -9,11 +9,30 @@
 #           url: https://example.com
 #           description: 描述
 
-- taxonomy: 虚拟资料
-  icon: fas fa-download fa-lg
+- taxonomy: 软件安装包
+  icon: fas fa-box-open fa-lg
   list:
-    - term: 资料下载
+    - term: 剪辑软件
       links:
-        - title: 虚拟资料下载
-          url: http://localhost:9000/items
-          description: 虚拟资料商品下载中心，提供各类资源文件
+        - title: CapCut（国际版）历史版本 APK 合集
+          url: https://pan.quark.cn/s/66f366f56a3e
+          description: 5 个历史版本一次打包，安卓手机适用 | ¥2.99 | 提取码 uDC2
+        - title: capcut5.9 免费版
+          url: https://pan.quark.cn/s/66f366f56a3e
+          description: CapCut 5.9 免费版安装包 | ¥2.99 | 提取码 uDC2
+        - title: 安卓剪映（JianYing）历史版本 APK 合集
+          url: https://pan.quark.cn/s/66f366f56a3e
+          description: 共 12 个历史版本合集，安卓手机适用 | ¥2.99 | 提取码 uDC2
+        - title: 剪映 5.9+ 历史版本合集（PC 电脑版）
+          url: https://pan.quark.cn/s/66f366f56a3e
+          description: 电脑版历史版本安装包合集 | ¥2.99 | 提取码 uDC2
+    - term: 设计软件
+      links:
+        - title: AutoCAD 全版本安装包合集（2007-2026）
+          url: https://pan.quark.cn/s/55bc6d5e41ce
+          description: AutoCAD 2007-2026 全版本安装包合集 | ¥2.99 | 提取码 yKgz
+    - term: 效率工具
+      links:
+        - title: 视频下载神器（蝴蝶号全平台合集）
+          url: https://pan.quark.cn/s/66f366f56a3e
+          description: 最新更新的全平台视频下载工具 | ¥2.99 | 提取码 uDC2
