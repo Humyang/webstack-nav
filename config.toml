@@ -1,4 +1,4 @@
-baseURL               = "https://humyang.github.io/webstack-nav/"
+baseURL               = "https://www.dve2.com/"
 languageCode          = "zh-CN"
 title                 = "软件资源导航"
 theme                 = "WebStack-Hugo"

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://humyang.github.io/webstack-nav/sitemap.xml
+Sitemap: https://www.dve2.com/sitemap.xml
