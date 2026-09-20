@@ -1,6 +1,6 @@
 baseURL               = "https://humyang.github.io/webstack-nav/"
 languageCode          = "zh-CN"
-title                 = "资源导航"
+title                 = "软件资源导航"
 theme                 = "WebStack-Hugo"
 preserveTaxonomyNames = true
 disablePathToLower    = true
@@ -10,7 +10,7 @@ publishDir            = "public"				# 站点静态文件保存目录
 
 [params]
     author        = "yangxionggui"
-    description   = "精选优质资源导航站点 | 基于 WebStack-Hugo 主题"
+    description   = "精选软件安装包与虚拟资料下载：剪映、CapCut 历史版本合集，AutoCAD 2007-2026 全版本，视频下载工具等，夸克网盘高速下载，即拍即发。"
     upload        = ""      # 左侧导航栏的"网站提交"
     about         = ""	          # 左侧导航栏的"关于导航"页面(./about)
     repository    = "https://github.com/Humyang/webstack-nav"  
@@ -23,7 +23,8 @@ publishDir            = "public"				# 站点静态文件保存目录
     yiyan         = true                         		# 默认启用一言服务
     fancybox      = true                                        # 使用 Fancybox 实现图片灯箱/放大功能
 
-[params.seo]    
+[params.seo]
+    keywords       = '软件安装包,虚拟资料,剪映历史版本,CapCut下载,AutoCAD全版本,视频下载工具,资源导航,夸克网盘下载'
     baiduhmid       = ''	# 百度统计 hm.src 的 ID
     baiduSiteVer    = ''			# 百度HTML标签验证(baidu-site-verification)
     tj51laid        = ''                        		# 51.LA 网站统计
@@ -34,13 +35,13 @@ publishDir            = "public"				# 站点静态文件保存目录
     key = ""
 
 [params.images]
-    favicon           = "assets/images/bi-favicon.png"
+    favicon           = "assets/images/favicon.png"
     searchImageL      = "assets/images/bg-dna.jpg"		# 搜索部分浅色背景图
     searchImageD      = "assets/images/bg-dna.jpg"		# 搜索部分深色背景图
-    logoExpandLight   = "assets/images/bi-expand-dark.png"
-    logoExpandDark    = "assets/images/bi-expand-light.png"
-    logoCollapseLight = "assets/images/bi.png"
-    logoCollapseDark  = "assets/images/bi.png"
+    logoExpandLight   = "assets/images/logo.png"
+    logoExpandDark    = "assets/images/logo.png"
+    logoCollapseLight = "assets/images/logo.png"
+    logoCollapseDark  = "assets/images/logo.png"
     
 [markup.goldmark.renderer]
     unsafe = true
