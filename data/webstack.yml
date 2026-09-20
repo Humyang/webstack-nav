@@ -8,3 +8,12 @@
 #           logo: logo文件名
 #           url: https://example.com
 #           description: 描述
+
+- taxonomy: 虚拟资料
+  icon: fas fa-download fa-lg
+  list:
+    - term: 资料下载
+      links:
+        - title: 虚拟资料下载
+          url: http://localhost:9000/items
+          description: 虚拟资料商品下载中心，提供各类资源文件
