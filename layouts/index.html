@@ -282,7 +282,8 @@
       { name: "安卓剪映历史版本 APK", desc: "共 12 个历史版本合集，安卓手机适用", icon: "🎞️", url: QUARK, category: ["剪辑软件"], sort: 3, added: "2026-09-20", badge: "¥2.99", colors: ["#5267ff", "#7a8cff"] },
       { name: "剪映 5.9+ 历史版本（PC）", desc: "电脑版历史版本安装包合集", icon: "💻", url: QUARK, category: ["剪辑软件"], sort: 4, added: "2026-09-20", badge: "¥2.99", colors: ["#5267ff", "#7a8cff"] },
       { name: "AutoCAD 全版本 2007-2026", desc: "AutoCAD 2007-2026 全版本安装包合集", icon: "📐", url: "https://pan.quark.cn/s/625d01a28106?pwd=qVaP", category: ["设计软件"], sort: 5, added: "2026-09-20", badge: "¥2.99", colors: ["#ff5a5f", "#ff8a5f"] },
-      { name: "视频下载神器合集", desc: "最新全平台视频下载工具（蝴蝶号等）", icon: "📥", url: QUARK, category: ["效率工具"], sort: 6, added: "2026-09-20", badge: "¥2.99", colors: ["#0ea5e9", "#38bdf8"] }
+      { name: "视频下载神器合集", desc: "最新全平台视频下载工具（蝴蝶号等）", icon: "📥", url: QUARK, category: ["效率工具"], sort: 6, added: "2026-09-20", badge: "¥2.99", colors: ["#0ea5e9", "#38bdf8"] },
+      { name: "iPhone Duo 折叠预览", desc: "折叠屏 3D 交互演示 · 双指手势操控", icon: "📱", url: "/iphone-duo-gesture/", category: ["效率工具"], sort: 7, added: "2026-09-23", colors: ["#111827", "#374151"] }
     ];
 
     const categoryConfig = [
@@ -314,8 +315,9 @@
       return list;
     }
     function renderSiteCard(item, index) {
+      const internal = String(item.url).startsWith("/");
       return `
-        <a class="site-card" href="${escapeHTML(item.url)}" target="_blank" rel="noopener noreferrer"
+        <a class="site-card" href="${escapeHTML(item.url)}"${internal ? "" : ` target="_blank" rel="noopener noreferrer"`}
            style="--logo-a:${escapeHTML(item.colors[0])};--logo-b:${escapeHTML(item.colors[1])}"
            data-name="${escapeHTML(item.name)}">
           <span class="site-logo">${escapeHTML(item.icon)}</span>
