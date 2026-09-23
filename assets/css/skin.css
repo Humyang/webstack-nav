@@ -1,0 +1,145 @@
+/* ============================================================
+   站点皮肤：参考 tuostudy.upnb.top 现代卡片导航风格
+   主色：明亮黄 #ffcf21；深色 hero 区；圆角柔和卡片
+   ============================================================ */
+
+:root {
+  --brand: #ffcf21;
+  --brand-deep: #f5b900;
+  --brand-blue: #5267ff;
+  --page-bg: #f5f6f8;
+  --panel: #ffffff;
+  --text: #20232a;
+  --muted: #8b909b;
+  --line: #eceef2;
+  --hero-1: #0d0c18;
+  --hero-2: #111535;
+  --radius: 14px;
+  --shadow-card: 0 7px 20px rgba(35, 39, 50, 0.06);
+  --shadow-card-hover: 0 14px 34px rgba(35, 39, 50, 0.13);
+}
+
+body.io-grey-mode,
+body {
+  background: var(--page-bg) !important;
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+}
+
+/* ---------- 顶部 Hero 搜索区：深色渐变 + 光点 ---------- */
+#search-bg,
+.page-header {
+  position: relative;
+  background:
+    radial-gradient(circle at 12% 20%, rgba(255, 255, 255, 0.5) 0 1px, transparent 1.6px),
+    radial-gradient(circle at 78% 12%, rgba(255, 255, 255, 0.4) 0 1px, transparent 1.6px),
+    radial-gradient(circle at 55% 32%, rgba(255, 207, 33, 0.25) 0 2px, transparent 3px),
+    linear-gradient(160deg, var(--hero-1) 0%, var(--hero-2) 60%, #1a1f4a 100%) !important;
+  color: #fff;
+}
+
+.page-header .lead,
+.page-header h1,
+.page-header h2,
+.page-header p {
+  color: #fff !important;
+}
+
+/* 搜索框：药丸形、半透明深底 */
+#search .form-control,
+.s-search .form-control,
+#search input[type="text"] {
+  height: 46px !important;
+  border-radius: 24px !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  background: rgba(0, 0, 0, 0.45) !important;
+  color: #fff !important;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28) !important;
+  padding-left: 22px;
+}
+#search .form-control::placeholder,
+.s-search .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* 搜索按钮 */
+#search .btn,
+.s-search .btn {
+  border-radius: 24px !important;
+  height: 46px;
+  background: var(--brand) !important;
+  color: #20232a !important;
+  font-weight: 700;
+  border: none !important;
+  box-shadow: 0 8px 20px rgba(245, 185, 0, 0.35);
+}
+#search .btn:hover,
+.s-search .btn:hover {
+  background: var(--brand-deep) !important;
+  transform: translateY(-1px);
+}
+
+/* ---------- 导航卡片：白底圆角、柔和阴影、hover 上浮 ---------- */
+.card.no-c,
+.card {
+  background: var(--panel) !important;
+  border: 1px solid #f0f1f4 !important;
+  border-radius: var(--radius) !important;
+  box-shadow: var(--shadow-card) !important;
+  transition: transform .22s ease, box-shadow .22s ease;
+  overflow: hidden;
+}
+.card.no-c:hover,
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card-hover) !important;
+}
+
+/* 卡片内链接项 */
+.card a,
+.link-widget a,
+.list a {
+  transition: color .15s ease;
+}
+.card a:hover {
+  color: var(--brand-deep) !important;
+}
+
+/* 分类标题 */
+.widget-area .widget-title,
+.card-header,
+.category-title {
+  font-weight: 800;
+  letter-spacing: .02em;
+}
+
+/* ---------- 侧边栏 ---------- */
+#sidebar,
+.sidebar-nav {
+  background: #fff !important;
+  border-right: 1px solid var(--line) !important;
+  box-shadow: 4px 0 18px rgba(20, 25, 40, 0.04);
+}
+#sidebar .sidebar-item a {
+  border-radius: 10px;
+  color: var(--text);
+}
+#sidebar .sidebar-item a:hover,
+#sidebar .sidebar-item.active a {
+  background: rgba(255, 207, 33, 0.14) !important;
+  color: #b8860b !important;
+}
+
+/* ---------- 主色点缀：标签、徽章 ---------- */
+.badge,
+.site-tag {
+  background: var(--brand) !important;
+  color: #20232a !important;
+  border-radius: 6px;
+}
+
+/* ---------- 滚动条 ---------- */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: #d6d9e0; border-radius: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
